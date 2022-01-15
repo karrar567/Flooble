@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/main.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flooble homepage</title>
+  </head>
+  <body>
+    <nav>
+      <div id="navbar" class="nav-container">
+        <ul class="nav-list">
+          <li class="first-child">
+            <img
+              src="assets/close.png"
+              alt="sliding menu toggle off"
+              id="toggleOff"
+            />
+          </li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Store</a></li>
+        </ul>
+        <ul class="nav-list">
+          <li><a href="#">Floomail</a></li>
+          <li><a href="#">Images</a></li>
+        </ul>
+      </div>
+      <img src="assets/icon.png" alt="sliding menu toggle on" id="toggleOn" />
+    </nav>
+    <main>
+      <div class="container">
+        <h1 class="logo">f<span>l</span>oo<span>b</span>le</h1>
+        <form>
+          <input type="search" placeholder="search here.." />
+          <div class="btn-group">
+            <input type="submit" class="btn" value="Flooble Search" />
+            <input type="submit" class="btn" value="Show Me The Money" />
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <ul class="nav-list">
+        <li><a href="#">Advertizing</a></li>
+        <li><a href="#">Business</a></li>
+      </ul>
+      <ul class="nav-list">
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </footer>
+
+    <script>
+      const navBar = document.getElementById("navbar");
+      const toggleOn = document.getElementById("toggleOn");
+      const toggleOff = document.getElementById("toggleOff");
+
+      toggleOn.addEventListener("click", () => {
+        navbar.style.display = "flex";
+      });
+      toggleOff.addEventListener("click", () => {
+        navbar.style.display = "none";
+      });
+    </script>
+  </body>
+</html>
